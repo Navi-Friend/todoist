@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 0 0 35px;
+    font-size: 3.7rem !important;
+}
+
+.wrapper {
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    padding: 0 5px;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 0;
+    overflow-y: auto;
+}
+
+.userInteraction {
+    align-items: start;
+    display: flex;
+    gap: 2%;
+}
+
+@media screen and (max-width: 750px) {
+    .userInteraction {
+        flex-direction: column-reverse;
+    }
+
+    .userInteraction > * {
+        margin-top: 10px;
+    }
+}

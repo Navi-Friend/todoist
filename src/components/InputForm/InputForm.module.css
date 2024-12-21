@@ -1,0 +1,78 @@
+.mainInput {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 10px;
+    transition:
+        all,
+        box-shadow 0.3s;
+}
+
+.descriptionInput {
+    overflow: hidden;
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 6vw;
+    padding: 10px;
+}
+
+.addButton {
+    align-self: center;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    padding: 0.4em 0.8em;
+    margin-bottom: 10px;
+}
+
+.addButton.invalid {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.inputArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 97%;
+    gap: 2vw;
+}
+
+.inputsAndImportance {
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 83%;
+    display: flex;
+    gap: 8px;
+}
+
+.inputAreaWithButton {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.importance {
+    margin-top: 2%;
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.importance > button {
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 0.5em;
+}
+
+.activeImportance {
+    background-color: rgb(12, 12, 12);
+    border: 2px solid white;
+}
